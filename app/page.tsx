@@ -10,6 +10,7 @@ import Static1 from "@/components/sections/Static1"
 import Resume1 from "@/components/sections/Resume1"
 import Testimonials1 from "@/components/sections/Testimonials1"
 import Projects2 from "@/components/sections/Projects2"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
 				<Testimonials1 />
 				<Blog1 />
 				<Contact1 />
+				<SpeedInsights />
 			</Layout>
 		</>
 	)
