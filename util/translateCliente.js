@@ -1,11 +1,12 @@
-const { Translate } = require("@google-cloud/translate").v2;
+import { Translate } from "@google-cloud/translate";
 
-const keyFilePath = "./util/jdml-448601-3555ff0480ac.json"; // Ruta al archivo JSON de credenciales
+// Ruta al archivo JSON de credenciales
+const keyFilePath = "./util/jdml-448601-3555ff0480ac.json";
 
 const translate = new Translate({
   keyFilename: keyFilePath,
 });
 
-console.log('Archivo encontrado')
+console.log("Archivo encontrado");
 
-module.exports = translate;
+export default translate;
